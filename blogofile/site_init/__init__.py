@@ -16,7 +16,8 @@ available_sites = [
     # (name of site, description, module)
     ("bare", "A blank site with no blog", "bare"),
     ("simple_blog", "A (very) simple blog with no theme", "simple_blog"),
-    ("blogofile.com", "The blogofile.com blog fully themed (requires git)", "blogofile_com.py")
+    ("blogofile.com", "The blogofile.com blog fully themed (requires git)", "blogofile_com.py"),
+    ("html5boilerplate", "A simple blog that uses the html5boilerplate.com skeleton", "html5boilerplate"),
     ]
 
 #These are hidden site templates that are not shown in the list shown in help
@@ -26,6 +27,7 @@ hidden_sites = [
 
 extra_features = {
     "simple_blog": ["blog_features"],
+    "html5boilerplate": ["blog_features"],
     "simple_html5_blog": ["blog_features", "html5_blog_features"],
     "blog_unit_test":["blog_features"],
     "blog_features":["blog_controller","blog_templates","blog_filters",
